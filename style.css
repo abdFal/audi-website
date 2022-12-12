@@ -43,6 +43,7 @@ video {
 .navbar-nav > a {
   margin: 0 8px;
   transition: 0.2s ease-in-out;
+  opacity: 1;
 }
 .navbar-nav > a:hover {
   transform: scale(1.05);
@@ -51,10 +52,12 @@ video {
   width: 140px;
   height: auto;
   margin-bottom: 7px;
+  opacity: 1;
 }
 #nav-btn {
   background: transparent;
   color: white;
+  opacity: 1;
   transition: var(--transition);
 }
 #nav-btn:hover {
