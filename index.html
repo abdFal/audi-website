@@ -39,7 +39,7 @@
   </head>
   <body>
     <!-- navbar section  -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="nav">
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold text-lg-center fs-1" href="#"
           ><img src="/img/image 3.png" alt="" id="nav-logo"
@@ -261,8 +261,96 @@
               type="button"
               class="btn lead fw-light btn-outline-dark btn-lg px-5 py-2 me-sm-3 rounded-0"
               id="btn-id"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
             >
-              Read More
+              See Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="fw-bold">Technical details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="icon-modal text-center mb-3">
+              <img src="/img/image 2.png" alt="" width="8%" height="auto" />
+            </div>
+            <div class="modal-title">
+              <h6 class="fw-bold text-center">
+                Audi R8 Coupé V10 performance quattro (456 kW)
+              </h6>
+            </div>
+            <div class="modal-img">
+              <div
+                class="row align-items-center justify-content-between py-3 my-3 ms-5"
+              >
+                <div class="col col-4">
+                  <img src="/img/dd.png" alt="" width="70%" height="auto" />
+                </div>
+                <div class="col col-4">
+                  <img src="/img/aaaa.png" alt="" width="70%" height="auto" />
+                </div>
+                <div class="col col-4">
+                  <img src="/img/ff.png" alt="" width="70%" height="auto" />
+                </div>
+              </div>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h6 class="fw-semibold">Engine type</h6>
+                V10 engine
+              </li>
+              <li class="list-group-item">
+                <h6 class="fw-semibold">Top speed in km/h (mph)</h6>
+                481 (275.7)
+              </li>
+              <li class="list-group-item">
+                <h6 class="fw-semibold">
+                  Max. power output in kW (hp) / at rpm
+                </h6>
+                456 (620) / 8000
+              </li>
+              <li class="list-group-item">
+                <h6 class="fw-semibold">Max. torque in Nm (lb-ft) / at rpm</h6>
+                580 (427.8) / 6600
+              </li>
+              <li class="list-group-item">
+                <h6 class="fw-semibold">
+                  Acceleration, 0-100 km/h (0-62.1 mph) in sec
+                </h6>
+                3,1
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-dark rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Close
             </button>
           </div>
         </div>
@@ -270,9 +358,9 @@
     </div>
     <!-- Features section-->
     <div id="news"></div>
-    <div class="container">
+    <div class="container pt-4">
       <div
-        class="text-center mb-5"
+        class="text-center mb-5 py-5"
         data-aos="fade-up"
         data-aos-delay="900"
         data-aos-duration="1200"
@@ -600,14 +688,14 @@
           </p>
         </div>
 
-        <div class="row no-gutters justify-content-center">
+        <div class="row no-gutters justify-content-center mt-5 pt-3">
           <div
-            class="col-lg-5 d-flex align-items-stretch"
+            class="col-lg-5 d-flex align-items-stretch mb-4"
             data-aos="fade-up"
             data-aos-delay="2500"
             data-aos-duration="1000"
           >
-            <div class="info bg-light p-4">
+            <div class="info bg-light ps-4 pt-4 pb-4 pe-5">
               <div class="address">
                 <i class="bi bi-geo-alt fs-3 mt-2"></i>
                 <h4 class="ps-5 fs-5 fw-normal">Location:</h4>
@@ -658,7 +746,7 @@
           </svg>
         </a>
         <span class="mb-3 mb-md-0 text-muted"
-          >&copy; 2022 Audi Pamijahan, Inc</span
+          >&copy; 2022 Audi Pamijahan, Abdillah Naufal</span
         >
       </div>
 
@@ -692,5 +780,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="/main.js"></script>
   </body>
 </html>

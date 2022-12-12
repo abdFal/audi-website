@@ -39,15 +39,13 @@ video {
 }
 #nav {
   padding: 8px 30px;
-  color: white !important;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px);
 }
 .navbar-nav > a {
   margin: 0 8px;
+  transition: 0.2s ease-in-out;
+}
+.navbar-nav > a:hover {
+  transform: scale(1.05);
 }
 #nav-logo {
   width: 140px;
@@ -62,6 +60,13 @@ video {
 #nav-btn:hover {
   background: white;
   color: black;
+}
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent;
+}
+.navbar-default.scrolled {
+  background: #000;
 }
 #heroes-img {
   cursor: pointer;
@@ -119,13 +124,15 @@ video {
   border-radius: 50%;
   border: 1px solid #ebebeb;
   display: inline-block;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
 }
 .contact .info {
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.contact .info:hover {
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
 }
 .contact .info i {
   float: left;
