@@ -11,3 +11,7 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
+
+function beli() {
+  alert("emang cukup uangnya?");
+}
