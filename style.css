@@ -84,17 +84,16 @@ video {
 #btn-id {
   transition: var(--transition);
 }
-.ab {
-  border-color: transparent;
-  background-color: white;
-}
-.ac {
+.modal-btn > button {
   border-color: transparent;
 }
-.carousel-control-next-icon {
-  display: none;
+#b2 {
+  background-color: #6e1b1b;
 }
-.carousel-control-prev-icon {
+#b3 {
+  background-color: rgb(20, 16, 86);
+}
+.carousel-indicators {
   display: none;
 }
 .title {
