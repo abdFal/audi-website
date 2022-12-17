@@ -6,12 +6,12 @@ $(function () {
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
-  document.title = "Sini dong :( ";
+  document.title = "Come here please :( ";
 });
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
 
 function beli() {
-  alert("emang cukup uangnya?");
+  alert("are you really sure?");
 }
