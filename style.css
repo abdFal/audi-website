@@ -52,6 +52,7 @@ video {
 }
 #nav {
   padding: 8px 30px;
+  height: 84px;
 }
 .navbar-nav > a {
   margin: 0 8px;
