@@ -4,7 +4,6 @@ $(function () {
   });
 });
 
-let docTitle = document.title;
 window.addEventListener("blur", () => {
   document.title = "Come here please :( ";
 });
